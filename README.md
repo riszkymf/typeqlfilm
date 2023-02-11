@@ -78,3 +78,4 @@ Use the accesstoken as your Bearer token Authorization
 - [Creating new graphql object]("./docs/graphql_object.md")
 - [Creating custom resolver]("./docs/lambda.md")
 - [Setting access control level for operations]("./docs/acl.md")
+- [Using Example Model]("./docs/using_example_model.md")
