@@ -5,6 +5,7 @@
 
 const Schema = `
     scalar Timestamp
+    scalar Date
     type Movie{
         id: ID
         createdAt: Timestamp
@@ -21,7 +22,7 @@ const Schema = `
         firstname: String!
         lastname: String
         birthplace: String
-        birthdate: Timestamp
+        birthdate: Date
         isAuthor: Boolean
         authorId: ID
         works: [ActorMovie]

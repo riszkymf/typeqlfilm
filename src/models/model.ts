@@ -156,7 +156,9 @@ Author.init({
     },
     lastname: { type: DataTypes.STRING },
     birthplace: { type: DataTypes.STRING },
-    birthdate: {type: 'TIMESTAMP'},
+    birthdate: {
+        type: DataTypes.DATEONLY
+    },
     isActor: {type: DataTypes.BOOLEAN},
     actorId: {
         type: DataTypes.UUID,
