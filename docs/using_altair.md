@@ -53,3 +53,5 @@ if(responseData){
 Then you can set the header manually or use `{{accessToken}}` so it will retrieve your environment variable
 
 [Setting Headers on Altair](https://altairgraphql.dev/docs/features/headers.html)
+
+Or you can use the [collection sample]("../docs/examples.agc") and import it into the altair
