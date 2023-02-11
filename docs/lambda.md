@@ -1,11 +1,11 @@
 # Lambda and Customized Resolver
 
-As generated operation only serves basic CRUD operations, for a complex operation you will need lambda. For example see [user lambda]("../src/lambdas/User")
+As generated operation only serves basic CRUD operations, for a complex operation you will need lambda. For example see [user lambda](../src/lambdas/User")
 
 Each lambda is separated on its own folder inside src/lambdas, where it must have:
-    - [acl.json]("../src/lambdas/User/acl.json") for acl mapping
-    - [index.ts]("../src/lambdas/User/index.ts") for resolver
-    - [schema.ts]("../src/lambdas/User/schema.ts") for schema definition
+    - [acl.json](../src/lambdas/User/acl.json") for acl mapping
+    - [index.ts](../src/lambdas/User/index.ts") for resolver
+    - [schema.ts](../src/lambdas/User/schema.ts") for schema definition
 
 Any type defined in lambda will not be created on database and wont generate CRUD operation by itself. Its purpose is to create a resolver that interact with an already existing type in database.
 
@@ -29,5 +29,5 @@ module.exports =  {
 schema.ts is where the GraphQL Object is defined. It can use a pre defined schema from schemaModel.ts without importing as both schema will be merged in the end.
 
 **acl.json**
-acl.json is where you create the acl control for your lambda. For further information on acl, see [acl documentation]("./acl.md")
+acl.json is where you create the acl control for your lambda. For further information on acl, see [acl documentation](./acl.md)
 

@@ -2,7 +2,7 @@
 
 On this boilerplate, the example we use is a schema to describe the relationship between Authors, Actors and Movies.
 
-![FilmModel]("./FilmModel.png")
+![FilmModel](./FilmModel.png")
 ### Explanation
 1. An Actor model contains isAuthor (Boolean) and authorId to describe whether they are also an author or not. It also contain a works sequelize virtual field, where it stores which movie they directed. This field will retrieve data from ActorMovie, selecting rows which satisfy `Actor.id = ActorMovie.actorId`.
 
@@ -13,4 +13,4 @@ On this boilerplate, the example we use is a schema to describe the relationship
 
 ## Notes on updating data
 - On connecting Movie and Actor or Movie and Author, user needs to fill the ActorMovie or AuthorMovie table respectively. 
-- To simplify operation, user can create specific lambda to create everything at once. See Documentation on [lambda]("./lambda.md")
+- To simplify operation, user can create specific lambda to create everything at once. See Documentation on [lambda](./lambda.md)

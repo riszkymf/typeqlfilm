@@ -54,4 +54,4 @@ Then you can set the header manually or use `{{accessToken}}` so it will retriev
 
 [Setting Headers on Altair](https://altairgraphql.dev/docs/features/headers.html)
 
-Or you can use the [collection sample]("../docs/examples.agc") and import it into the altair
+Or you can use the [collection sample](../docs/examples.agc) and import it into the altair

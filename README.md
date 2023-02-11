@@ -75,8 +75,8 @@ Use the accesstoken as your Bearer token Authorization
 
 
 ## In Depth Development Notes
-- [Creating new graphql object]("./docs/graphql_object.md")
-- [Creating custom resolver]("./docs/lambda.md")
-- [Setting access control level for operations]("./docs/acl.md")
-- [Using Example Model]("./docs/using_example_model.md")
-- [Using Altair]("./docs/using_altair.md")
+- [Creating new graphql object](./docs/graphql_object.md)
+- [Creating custom resolver](./docs/lambda.md)
+- [Setting access control level for operations](./docs/acl.md)
+- [Using Example Model](./docs/using_example_model.md)
+- [Using Altair](./docs/using_altair.md)
