@@ -1,0 +1,27 @@
+version: '3'
+services:
+  typeqlfilm:
+    image: mfriszky/typeqlfilm
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+    - "4542:4542"
+    environment:
+    - JWT_SECRET=myJWTSecret
+    - JWT_EXPIRES=86400
+    - DB_HOST=postgres://postgres:postgres@db:5432/movieql
+    - APP_PORT=4542
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=movieql
+    volumes: 
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local

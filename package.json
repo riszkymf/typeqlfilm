@@ -1,0 +1,66 @@
+{
+  "name": "typeqlfilm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riszkymf/typeqlfilm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riszkymf/typeqlfilm/issues"
+  },
+  "homepage": "https://github.com/riszkymf/typeqlfilm#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.33.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@graphql-codegen/typescript-graphql-files-modules": "^2.2.1",
+    "@graphql-tools/graphql-file-loader": "^7.5.15",
+    "@graphql-tools/import": "^6.7.16",
+    "@graphql-tools/load": "^7.8.11",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.3.18",
+    "@graphql-tools/schema": "^9.0.15",
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "altair-express-middleware": "^5.0.14",
+    "bcrypt": "^5.1.0",
+    "class-validator": "^0.14.0",
+    "express-graphql": "^0.12.0",
+    "graphiql": "^2.2.0",
+    "graphql": "^16.6.0",
+    "graphql-2-json-schema": "^0.10.0",
+    "graphql-middleware": "^6.1.33",
+    "graphql-scalars": "^1.20.1",
+    "graphql-shield": "^7.6.5",
+    "graphql-tag": "^2.12.6",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4",
+    "type-graphql": "^1.1.1"
+  }
+}

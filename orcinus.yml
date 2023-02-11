@@ -1,0 +1,19 @@
+stack: 'orcinus'
+services:
+  typeqlfilm:
+    image: mfriszky/typeqlfilm
+    restart: always
+    ports:
+    - "4542:4542"
+    environment:
+    - JWT_SECRET=6bQ5Qztz6NEyBQX7iZutZCaoei
+    - JWT_EXPIRES=86400
+    - DB_HOST=postgres://postgres:smadavantivirus@db:5432/movieql
+    - APP_PORT=4542
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=smadavantivirus
+      - POSTGRES_DB=movieql
